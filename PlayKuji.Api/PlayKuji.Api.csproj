@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <OutputType>Exe</OutputType>
+    <StartupObject></StartupObject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PlayKuji.BusinessLayer\PlayKuji.BusinessLayer.csproj" />
+    <ProjectReference Include="..\PlayKuji.DataLayer\PlayKuji.DataLayer.csproj" />
+    <ProjectReference Include="..\PlayKuji.Domain\PlayKuji.Domain.csproj" />
+    <ProjectReference Include="..\PlayKuji.Utility\PlayKuji.Utility.csproj" />
+  </ItemGroup>
+
+</Project>
